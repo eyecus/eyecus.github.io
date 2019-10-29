@@ -14,18 +14,19 @@ section {
     padding: 60px 10px;
 }
 
-section-sm {
-    padding: 10px 10px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: 'Lexend Deca', sans-serif;
     color: #1a1a1a;
 }
 
 h1 { font-size: 54px; font-weight: 600;}
-h3 { font-size: 44px; font-weight: 300; }
+h3 { 
+    font-size: 26px; 
+    font-weight: 300; 
+    color: #5a5d5f;
+}
 h4 { color: #3c78d8; }
+
 
 p {
     margin-bottom: 0px;
@@ -57,6 +58,21 @@ a:hover {
     text-decoration: none;
 }
 
+.e3-l {
+    float: left;
+}
+
+.e3-r {
+    float: right;
+}
+
+.container {width: 100％; }
+.align-left {float: left; width：50％; } 
+.align-right {float: right; width：50％; }
+
+#es {
+    padding: 25px 10px;
+}
 
 .text-muted {
     color:rgba(0, 0, 0, 0.3) !important;
@@ -178,7 +194,7 @@ a:hover {
 }
 
 .bg-dark {
-    background-color: #1a1a1a !important;
+    background-color: #f1f3f4 !important;
 }
 
 .bg-gray {
@@ -254,8 +270,8 @@ a:hover {
     background-size: cover;
     width: 100%;
     height: auto;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     max-width: 600px;
 }
 
@@ -265,12 +281,13 @@ a:hover {
 文本图框
 ////////////////////////////////////////*/
 .pricing-box-stop {
+    background: #ffffff;
     font-weight: 300;
     border: 1px solid #ced4da;
-    border-radius: 4px;
+    border-radius: 8px;
     max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0px 0px;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
@@ -278,9 +295,9 @@ a:hover {
 }
 
 .pricing-box-stop:hover {
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+    -moz-transform: scale(1.015);
+    -webkit-transform: scale(1.015);
+    transform: scale(1.015);
 
 .pricing-box {
     font-weight: 300;
