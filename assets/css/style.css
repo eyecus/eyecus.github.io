@@ -15,7 +15,7 @@ section {
 }
 
 h1, h2, h4, h5, h6 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Lexend Deca', sans-serif ;
     color: #1a1a1a;
 }
 
@@ -198,7 +198,7 @@ a:hover {
 }
 
 .bg-gray {
-    background-color: #d9d9d9 !important;
+    background-color: #33424e !important;
 }
 
 .bg-light {
@@ -232,10 +232,11 @@ a:hover {
     text-align: center;
     position: fixed;
     top: 0; 
+    padding: 0px 0px;
     z-index: 10;
     width: 100%;
     font-family: 'Roboto', 'Noto Sans SC',sans-serif;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35);
 }
 
 .navbar-toggler:focus {
@@ -253,7 +254,7 @@ a:hover {
 }
 
 .logo-navbar {
-    width: 200px;
+    width: 160px;
     max-width: 220px;
 }
 
@@ -298,6 +299,7 @@ a:hover {
     -moz-transform: scale(1.015);
     -webkit-transform: scale(1.015);
     transform: scale(1.015);
+}
 
 .pricing-box {
     font-weight: 300;
