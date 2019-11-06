@@ -72,6 +72,7 @@
 }
 
 .blue-btn:hover {
+    text-decoration: none;
     background-color: #e9f0fd;
     color: #377dff;
 }
