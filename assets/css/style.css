@@ -30,21 +30,22 @@ dl, ol, ul {
 
 /*////////////////// 导航栏 //////////////////*/
 
-#navbar, #navbar a {
+.navbar a {
+    font-family: 'Roboto', 'Noto Sans SC',sans-serif;
     color: #666666;
+    font-weight: 500;
 }
 
 .navbar {
+    background-color: #ffffff;
+    line-height: 45px;
     display: inline-block;
-    height: auto;
-    line-height: 50px;
     text-align: center;
     position: fixed;
     top: 0; 
     padding: 0px 0px;
     z-index: 10;
     width: 100%;
-    font-family: 'Roboto', 'Noto Sans SC',sans-serif;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,15 +54,19 @@ dl, ol, ul {
 }
 
 .nav-logo {
-    width: 160px;
-    max-width: 220px;
+    padding: 8px;
+    width: auto;
+    height: auto;
+    max-height: 54px;
+}
+
+.nav-item {
+    margin-top: 4px;
 }
 
 .nav-link {
     padding-left: 15px !important;
     padding-right: 15px !important;
-
-    font-weight: 300;
     display: inline-block;
     line-height: 30px;
     background-color: transparent !important;
@@ -73,11 +78,16 @@ dl, ol, ul {
     border-bottom: 4px solid #6d9eeb;
 }
 
+.nav-right {
+    margin: 0px !important;
+    text-align: right !important;
+    float: right !important;
+}
+
 /*////////////////// 按钮 //////////////////*/
 
 .nav-btn {
     line-height: 35px;
-    color: #666666;
     padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
@@ -207,6 +217,18 @@ dl, ol, ul {
 
 .bg-light {
     background-color: #ffffff !important;
+}
+
+.blank-l {
+    padding-left: 30px;
+}
+
+.blank-r {
+    padding-right: 30px;
+}
+
+.blank-t{
+    margin-top: -4px;
 }
 
 /*////////////////// 自适应尺寸 //////////////////*/
