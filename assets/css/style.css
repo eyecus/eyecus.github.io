@@ -73,8 +73,8 @@
 
 .blue-btn:hover {
     text-decoration: none;
-    background-color: #e9f0fd;
-    color: #377dff;
+    background-color: #6d9eeb;
+    color: #ffffff;
 }
 
 
@@ -83,7 +83,7 @@
 .navbar {
     display: inline-block;
     height: auto;
-    line-height: 54px;
+    line-height: 50px;
     text-align: center;
     position: fixed;
     top: 0; 
@@ -95,8 +95,7 @@
 }
 
 .nav-item {
-    padding-left: 5px;
-    padding-right: 5px;
+
 }
 
 .navbar-toggler:focus {
@@ -109,6 +108,9 @@
 }
 
 .nav-link {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
     font-weight: 300;
     color: #666666;
     display: inline-block;
@@ -121,6 +123,10 @@
     color: #666666;
     opacity: .95;
     border-bottom: 4px solid #6d9eeb;
+}
+
+a {
+    color: #6d9eeb;
 }
 
 
