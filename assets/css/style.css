@@ -1,9 +1,49 @@
 
-/*////////////////// 基本 //////////////////*/
+(function () {
+  ('[data-toggle="popover"]').popover()
+})
+
+
+
+
+(function () {
+  ('.example-popover').popover({
+    container: 'body'
+  })
+})
+
+
+
+
+
+/*///////////// eyecus.com CSS ////////////*/
+
+/*////////////////// 基本 /////////////////*/
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 body {
+    /* 禁用文字选中*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
     margin: 0;
-    font-family: 'Roboto' 'Noto Sans SC', sans-serif;
+
+    font-family-sans-serif:
+    /* Safari for OS X and iOS (San Francisco)*/
+    -apple-system,
+    /* Chrome < 56 for OS X (San Francisco)*/
+    BlinkMacSystemFont,
+    /* Windows*/
+    "Segoe UI",
+    /* Android*/
+    "Roboto",
+    /* Basic web fallback*/
+    "Helvetica Neue", Arial, sans-serif,
+    /* Emoji fonts*/
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: .07em;
@@ -14,8 +54,8 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lexend Deca', sans-serif ;
     color: #1a1a1a;
+    font-family: 'Lexend Deca', sans-serif ;
 }
 
 a {
@@ -30,12 +70,6 @@ dl, ol, ul {
 
 /*////////////////// 导航栏 //////////////////*/
 
-.navbar a {
-    font-family: 'Noto Sans SC',sans-serif;
-    color: #666666;
-    font-weight: 500;
-}
-
 .navbar {
     background-color: #ffffff;
     line-height: 45px;
@@ -49,12 +83,20 @@ dl, ol, ul {
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
 }
 
+.navbar a {
+    text-decoration: none !important;
+    font-size: 15px;
+    color: #666666;
+    font-weight: 500;
+}
+
 .navbar-toggler:focus {
     outline: none;
 }
 
 .nav-logo {
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: auto;
     height: auto;
     max-height: 54px;
@@ -78,22 +120,73 @@ dl, ol, ul {
     border-bottom: 4px solid #6d9eeb;
 }
 
-.nav-right {
-    margin: 0px !important;
-    text-align: right !important;
-    float: right !important;
+.nav-link-active {
+    color: #202020 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: inline-block;
+    line-height: 30px;
+    opacity: .90;
+    background-color: transparent !important;
+    border-bottom: 4px solid #6d9eeb;
 }
+
+.nav-link-active:hover {
+    opacity: .95;
+    border-bottom: 4px solid #6d9eeb;
+}
+
+.nav-ul-link {
+    text-align: center;
+    display: block;
+    padding: .25rem 1.4rem;
+    clear: both;
+    color: #666666;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+.nav-ul-link:hover{
+    background-color: #f1f3f4;
+}
+
+.dropdown-menu {
+    min-width: 50px !important;
+    border-radius: 4px !important;
+    margin-top: 1px !important;
+    border: 0px !important;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+
 
 /*////////////////// 按钮 //////////////////*/
 
 .nav-btn {
+    color: #666666 !important;
     line-height: 35px;
     padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
     border-radius: 4px;
     border:1px solid #cccccc;
-    margin-left: 15px;
+    margin-left: 20px;
     transition: all 0.2s;
 }
 
@@ -104,7 +197,6 @@ dl, ol, ul {
 }
 
 .blue-btn {
-    font-family: 'Noto Sans SC', sans-serif;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0em;
@@ -166,7 +258,6 @@ dl, ol, ul {
 
 .fillet-box-text {
     text-align: left !important;
-    font-family: 'Noto Sans SC', sans-serif;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: .01em;
