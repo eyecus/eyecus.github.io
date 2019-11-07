@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Roboto' 'Noto Sans SC', sans-serif;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: .07em;
@@ -31,7 +31,7 @@ dl, ol, ul {
 /*////////////////// 导航栏 //////////////////*/
 
 .navbar a {
-    font-family: 'Roboto', 'Noto Sans SC',sans-serif;
+    font-family: 'Noto Sans SC',sans-serif;
     color: #666666;
     font-weight: 500;
 }
