@@ -1,21 +1,4 @@
 
-(function () {
-  ('[data-toggle="popover"]').popover()
-})
-
-
-
-
-(function () {
-  ('.example-popover').popover({
-    container: 'body'
-  })
-})
-
-
-
-
-
 /*///////////// eyecus.com CSS ////////////*/
 
 /*////////////////// 基本 /////////////////*/
@@ -24,25 +7,18 @@
 }
 
 body {
-    /* 禁用文字选中*/
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    margin: 0;
-
-    font-family-sans-serif:
-    /* Safari for OS X and iOS (San Francisco)*/
-    -apple-system,
-    /* Chrome < 56 for OS X (San Francisco)*/
+    font-family:
+    /* Safari */
+    apple-system,
+    /* Chrome */
     BlinkMacSystemFont,
-    /* Windows*/
+    /* Windows */
     "Segoe UI",
-    /* Android*/
+    /* Android */
     "Roboto",
-    /* Basic web fallback*/
+    /* Basic web fallback */
     "Helvetica Neue", Arial, sans-serif,
-    /* Emoji fonts*/
+    /* Emoji fonts */
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
     font-size: 15px;
     font-weight: 500;
@@ -71,6 +47,13 @@ dl, ol, ul {
 /*////////////////// 导航栏 //////////////////*/
 
 .navbar {
+    /* 禁用文字选中*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    margin: 0;
+
     background-color: #ffffff;
     line-height: 45px;
     display: inline-block;
@@ -97,6 +80,7 @@ dl, ol, ul {
 .nav-logo {
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 5px;
     width: auto;
     height: auto;
     max-height: 54px;
@@ -175,7 +159,6 @@ dl, ol, ul {
     border-radius: 4px;
 }
 
-
 /*////////////////// 按钮 //////////////////*/
 
 .nav-btn {
@@ -218,7 +201,6 @@ dl, ol, ul {
     color: #ffffff;
 }
 
-
 /*////////////////// 文本图框 //////////////////*/
 
 .fillet-box {
@@ -233,7 +215,7 @@ dl, ol, ul {
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 .fillet-box:hover {
