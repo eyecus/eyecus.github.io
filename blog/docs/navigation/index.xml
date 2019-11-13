@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>导航 on eyecus</title>
+    <link>https://blog.eyecus.com/docs/navigation/</link>
+    <description>Recent content in 导航 on eyecus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://blog.eyecus.com/docs/navigation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>操作技巧</title>
+      <link>https://blog.eyecus.com/docs/navigation/tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.eyecus.com/docs/navigation/tips/</guid>
+      <description>如何关闭Win10系统自动更新？  为了避免在重要时刻被Windows更新打断，合理的安排更新时间。看看关掉烦人的Win10自动更新。  步骤速览
+ 快捷键WIN+R调出运行工具，输入组策略命令services.msc，点击确定; 在服务中找到Windows Update选项，双击; 在“启动类型”下选择“禁用”，并点击确定。  点击阅读详细图解 ...   快捷键WIN+R调出运行工具，输入组策略命令services.msc，点击确定。
+  在服务中找到Windows Update选项，双击。
+  在启动类型下选择禁用，并点击确定。
+     注意 由于方法涉及使用运用组策略，故Windows10家庭版可能不适用。     如何禁用Windows Defender Service？  微软推出的Windows10操作系统自带了Windows Defender防病毒程序，给予了电脑一定的反病毒攻击的能力，与此同时也给用户带来了一些困扰。一些用户希望能够关闭这个功能，看看应该如何操作吧。  步骤速览
+ 使用快捷键WIN+R调出运行工具，输入组策略命令gpedit.msc，点击确定。 进入组策略后按照如下路径找到对应项： 计算机配置/管理模板/Windows组件/Windows Defender防病毒程序/关闭Windows Defender防病毒程序。 双击关闭Windows Defender防病毒程序，在弹出的窗口中选择已启用，点击确定，退出组策略编辑器。 在任务栏空白处点击鼠标右键，打开任务管理器，点击启动选项卡，右键单击Windows Defender将其禁用。 完成上述操作后重启计算机。  点击阅读详细图解 ...   使用快捷键WIN+R调出运行工具，输入组策略命令gpedit.msc，点击确定。
+  进入组策略后按照如下路径找到关闭Windows Defender防病毒程序：
+计算机配置/管理模板/Windows组件/Windows Defender防病毒程序/关闭Windows Defender防病毒程序。    双击关闭Windows Defender防病毒程序，在弹出的窗口中选择已启用，点击确定，退出组策略编辑器。</description>
+    </item>
+    
+    <item>
+      <title>资源分享</title>
+      <link>https://blog.eyecus.com/docs/navigation/resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.eyecus.com/docs/navigation/resource/</guid>
+      <description>声明
+本页面提供的链接均来自其发布官网，且仅提供软件的下载链接，不含任何破解内容，仅供学习和研究使用，不得用于任何商业用途 ，如本站不慎侵犯你的版权请 联系 我们，本站将及时处理，并撤下相关内容！
+  页面推荐 在搜索引擎搜索软件时，一不小心会被带伪装效果的广告链接所骗，下载到不安全带有木马的程序，对电脑伤极大，本文提供一个找软件公司官方的便捷导航及一些我用着还不错的相对而言还不错的下载网站。  部分著名软件企业官网     组织名称 代表产品 主营领域 公司主页     Adobe Photoshop, After Effects 创意 adobe.com   Autodesk AutoCAD, 3ds Max, Maya 工程 autodesk.com   Microsoft Windwos, Office 效率 microsoft.com   Corel CorelDraw, 会声会影 创意 corel.com   WinRAR WinRAR 压缩 winrar.com   vmware Workstation Pro 虚拟机 vmware.com   TeamViewer TeamViewer 远程控制 teamviewer.</description>
+    </item>
+    
+  </channel>
+</rss>

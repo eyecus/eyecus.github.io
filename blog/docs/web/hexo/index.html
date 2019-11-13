@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Hexo建站" />
+<meta property="og:description" content="HEXO 建站简易教程 Hexo是一款快速、简洁且高效的博客框架，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。
+Hexo官网 Hexo主题 Hexo中文 Hexo仓库
+    第1步 安装 Hexo 框架   注意
+ 安装 Hugo 之前要确保设备装有  Git 和  Node.js(建议安装最新版本)。
+ 执行安装操作前 macOS 用户终端输入sudo su命令并密码获取系统权限，Windows 用户以管理员身份运行CMD获取系统权限。
+    使用npm安装Hexo
+npm install -g hexo-cli   提示
+由于国内可能会有网络受限的问题，使用npm会出现安装极慢或者安装失败，可以用cnpm替代。安装cnpm终端输入npm install -g cnpm --registry=https://registry.npm.taobao.org，然后使用cnpm替换命令中的npm，例如：使用cnpm install -g hexo-cli安装Hexo。
+  安装完后，在终端中输入如下代码验证安装。
+hexo -v   第2步 生成网站   首先新建并进入博客文件夹test在终端中输入如下代码：
+mkdir test cd test  在终端中输入如下代码下载Hexo文件：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.eyecus.com/docs/web/hexo/" />
+
+<title> 視由 | Hexo建站 </title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono|Noto+Sans+SC:400,500|Noto+Serif+SC:500|Roboto:400|B612&display=swap" rel="stylesheet">
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/book.min.2beb139c1dc957fc60e9912a85d784f45a5b3632d7206fae9f4e0fa1fdad7543.css" integrity="sha256-K&#43;sTnB3JV/xg6ZEqhdeE9FpbNjLXIG&#43;un04Pof2tdUM=">
+
+
+<script defer src="/search.min.ff284f05472b1e533bb2980eebd85b6de2a3093dee9107eead05f302f1042fe8.js" integrity="sha256-/yhPBUcrHlM7spgO69hbbeKjCT3ukQfurQXzAvEEL&#43;g="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', ' UA-151512526-1 ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <meta name="keywords" content="视由,视界事由,eyecus,博客,blog,世佳,黑苹果,eyecusIO,前端,eyecus.com,利隐客,利隐者,利隐创意,leeyin " />
+<meta name="description" content="视由(eyecusIO)是世佳的个人博客，主要分享日常学习过程中觉得有用的的所见所闻，博客内容主要涉及平面设计、前端开发、资源分享等。">
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+
+<a href="/">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"height="32px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xml:space="preserve">  <image id="image0" width="400" height="82" x="0" y="0"
+    href="data:image/png;base64,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" />
+</svg>
+</a>
+
+
+<div class="book-search">
+  <input type="text" placeholder="  站内搜索" id="book-search-input" maxlength="64" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+<div class="menu-text">
+
+
+
+
+    
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      <span>导航</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/navigation/tips/" >
+      操作技巧
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/navigation/resource/" >
+      资源分享
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      <span>Web</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/web/html/" >
+      前端基础
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/web/hugo/" >
+      Hugo建站
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/web/hexo/"  class="active">
+      Hexo建站
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/web/webfonts/" >
+      Google Fonts
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      <span>Design</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/design/colors/" >
+      色彩基础
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/design/fonts/" >
+      免费字体
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/design/emoji/" >
+      绘文字表
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      <span>Hackintosh</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/hackintosh/install/" >
+      安装指导
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/docs/hackintosh/file/" >
+      工具下载
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li  class="book-section-flat" >
+    
+      
+
+  <a href="/docs/about/" >
+      关于本站
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/docs/about/links/" >
+      友链
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  </label>
+  <strong>Hexo建站</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="i-class-fa-fa-tags-i-hexo-建站简易教程"><strong><i class="fa fa-tags"></i> HEXO 建站简易教程</strong></h1>
+
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <p><strong>Hexo</strong>是一款快速、简洁且高效的<strong>博客框架</strong>，具有超快速度、支持 Markdown、一键部署、丰富的插件和可扩展性等特点。</p>
+
+<p><a href="https://hexo.io/"><code>Hexo官网</code></a> <a href="https://hexo.io/themes/"><code>Hexo主题</code></a> <a href="https://hexo.io/zh-cn/"><code>Hexo中文</code></a> <a href="https://github.com/hexojs/hexo"><code>Hexo仓库</code></a></p>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <div align="center"> 
+<img src="https://raw.githubusercontent.com/hexojs/logo/master/hexo-logo-avatar.png" width=100 />
+</div>
+  </div>
+  
+</div>
+
+
+<h3 id="第1步-安装-hexo-框架">第1步 安装 Hexo 框架</h3>
+
+<hr>
+
+<blockquote class="book-hint warning">
+  <p><strong><i class="fa fa-exclamation-triangle"></i> 注意</strong></p>
+
+<ul>
+<li><p>安装 Hugo 之前要确保设备装有 <a href="https://git-scm.com/"><strong><i class="fa fa-download"></i> Git</strong></a> 和 <a href="https://nodejs.org/"><strong><i class="fa fa-download"></i> Node.js</strong></a>(建议安装最新版本)。</p></li>
+
+<li><p>执行安装操作前 macOS 用户终端输入<code>sudo su</code>命令并密码获取系统权限，Windows 用户以管理员身份运行<code>CMD</code>获取系统权限。</p></li>
+</ul>
+
+</blockquote>
+
+
+<ul>
+<li><p>使用<code>npm</code>安装<code>Hexo</code></p>
+
+<pre><code>npm install -g hexo-cli
+</code></pre>
+
+<blockquote class="book-hint info">
+  <p><strong><i class="fa fa-exclamation-circle"></i> 提示</strong></p>
+
+<p>由于国内可能会有网络受限的问题，使用<code>npm</code>会出现安装极慢或者安装失败，可以用<code>cnpm</code>替代。安装<code>cnpm</code>终端输入<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>，然后使用<code>cnpm</code>替换命令中的<code>npm</code>，例如：使用<code>cnpm install -g hexo-cli</code>安装<code>Hexo</code>。</p>
+
+</blockquote>
+</li>
+
+<li><p>安装完后，在终端中输入如下代码验证安装。</p>
+
+<pre><code>hexo -v
+</code></pre></li>
+</ul>
+
+<h3 id="第2步-生成网站">第2步 生成网站</h3>
+
+<hr>
+
+<ul>
+<li><p>首先新建并进入博客文件夹<code>test</code>在终端中输入如下代码：</p>
+
+<pre><code>mkdir test
+cd test
+</code></pre></li>
+
+<li><p>在终端中输入如下代码下载<code>Hexo</code>文件：</p>
+
+<pre><code>sudo hexo init
+</code></pre>
+
+<blockquote class="book-hint info">
+  <p><strong><i class="fa fa-exclamation-circle"></i> 提示</strong></p>
+
+<p>代码中<code>test</code>是所创建的网站文件夹名称，由用户自定义，以下网站名均由<code>test</code>代指。</p>
+
+</blockquote>
+</li>
+</ul>
+
+<h3 id="第3步-网站配置-套用主题">第3步 网站配置(套用主题)</h3>
+
+<hr>
+
+<ul>
+<li><p>在终端中输入如下命令为 hexo 安装 git 插件。</p>
+
+<pre><code>npm install --save hexo-deployer-git
+</code></pre></li>
+
+<li><p>进入网站根目录</p>
+
+<pre><code>cd test
+</code></pre></li>
+
+<li><p>在<code>Hexo</code>主题商店 <a href="https://hexo.io/themes/"><strong>https://hexo.io/themes <i class="fa fa-external-link"></i></strong></a> 中选择自己喜欢的主题，使用如代码代克隆主题至本地。</p>
+
+<pre><code>git clone https://github.com/XXXXX/XXXX themes/XXXX
+</code></pre>
+
+<blockquote class="book-hint info">
+  <strong><i class="fa fa-exclamation-circle"></i> 提示</strong>
+代码中网址为主题Github仓库地址，<code>XXXX</code>为主题文件夹名称。
+</blockquote>
+</li>
+
+<li><p>编辑网站根目录中<code>_config.yml</code>文件，修改代码<code>theme: XXXX</code>以确认所使用的主题。<code>_config.yml</code>文件默认格式如下，参考 <a href="https://hexo.io/zh-cn/docs/configuration"><strong><i class="fa fa-file-text-o"></i> 官方文档</strong></a> 根据需要修改相关内容。</p>
+
+<pre><code># Site
+title: Hexo
+subtitle:
+description:
+author: John Doe
+language:
+timezone: Asia/Shanghai
+
+# URL
+url: http://yoursite.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+enable: true
+line_number: true
+auto_detect: false
+tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+path: ''
+per_page: 10
+order_by: -date
+  
+# Category &amp; Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+type:
+</code></pre></li>
+</ul>
+
+<h3 id="第4步-添加页面">第4步 添加页面</h3>
+
+<hr>
+
+<ul>
+<li><p>添加新页面，页面内容采用 <strong>Markdown</strong> 格式。</p>
+
+<pre><code>hexo new “my-first-post”
+</code></pre></li>
+
+<li><p>页面默认格式如下</p>
+
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2019/10/20 00:00:00
+categories:
+- 分类1
+- 分类2
+tags:
+- 标签1
+- 标签2
+---
+</code></pre>
+
+<blockquote class="book-hint info">
+  <p><strong><i class="fa fa-exclamation-circle"></i> 提示</strong></p>
+
+<p>代码中<code>my-first-post</code>为Markdown页面文件名，<code>title: &quot;My First Post&quot;</code>所写内容才是网站显示的标题，页面格式根据主题不同略有不同，详见主题描述。</p>
+
+</blockquote>
+</li>
+</ul>
+
+<h3 id="第5步-运行网站">第5步 运行网站</h3>
+
+<hr>
+
+<ul>
+<li><p>在终端中输入如下代码生成网页。浏览器访问 <a href="http://localhost:4000"><strong>http://localhost:4000 <i class="fa fa-external-link"></i></strong></a> 预览效果，关闭预览使用组合键<code>Ctrl+C</code>退出当前命令。</p>
+
+<pre><code>hexo s
+</code></pre></li>
+</ul>
+
+<h3 id="第6步-生成静态网页">第6步 生成静态网页</h3>
+
+<hr>
+
+<ul>
+<li><p>在终端中输入如下代码 清理旧文件、生成静态网页。</p>
+
+<pre><code>hexo clean
+hexo g
+</code></pre></li>
+</ul>
+
+<h3 id="第7步-部署-github-pages">第7步 部署 Github Pages</h3>
+
+<hr>
+
+<blockquote class="book-hint warning">
+  <p><strong><i class="fa fa-exclamation-triangle"></i> 注意</strong></p>
+
+<p>本文所使用的<code>Github Pages</code>并非部署网页的唯一提供商，你也可以使用<code>Coding</code>和<code>Gitee</code>等。</p>
+
+</blockquote>
+
+
+<ul>
+<li><p>执行此操作前请确保拥有Github账号，并创建一个以<code>XXX.github.io</code>命名的空仓库，其中<code>XXX</code>为你的Github用户名，修改<code>_config.yml</code>文件中<code>Git</code>配置信息。</p>
+
+<pre><code>deploy: https://github.com/XXX/XXX.github.io
+type: git
+branch: master
+</code></pre></li>
+
+<li><p>在终端中输入如下命令部署页面。</p>
+
+<pre><code>hexo d
+</code></pre></li>
+
+<li><p>浏览器输入<code>http://XXX.github.io</code>实现远程访问。</p></li>
+</ul>
+</article>
+
+      <div align="center">  
+<h5>MIT Licensed | Copyright © 2019 <strong>世佳</strong></h5>
+</div>
+      
+    </div>
+
+    
+  
+
+
+  <aside class="book-toc level-4 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#i-class-fa-fa-tags-i-hexo-建站简易教程"><strong><i class="fa fa-tags"></i> HEXO 建站简易教程</strong></a>
+<ul>
+<li>
+<ul>
+<li><a href="#第1步-安装-hexo-框架">第1步 安装 Hexo 框架</a></li>
+<li><a href="#第2步-生成网站">第2步 生成网站</a></li>
+<li><a href="#第3步-网站配置-套用主题">第3步 网站配置(套用主题)</a></li>
+<li><a href="#第4步-添加页面">第4步 添加页面</a></li>
+<li><a href="#第5步-运行网站">第5步 运行网站</a></li>
+<li><a href="#第6步-生成静态网页">第6步 生成静态网页</a></li>
+<li><a href="#第7步-部署-github-pages">第7步 部署 Github Pages</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+</body>
+
+</html>
