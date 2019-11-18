@@ -63,7 +63,7 @@ dl, ol, ul {
     padding: 0px 0px;
     z-index: 10;
     width: 100%;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ced4da;
 }
 
 .navbar a {
@@ -138,8 +138,8 @@ dl, ol, ul {
     min-width: 50px !important;
     border-radius: 4px !important;
     margin-top: 1px !important;
-    border: 0px !important;
-    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ced4da;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
 
     position: absolute;
     top: 100%;
