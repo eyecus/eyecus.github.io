@@ -52,7 +52,7 @@ dl, ol, ul {
     padding: 0px 0px;
     z-index: 10;
     width: 100%;
-    border: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
 }
 
 .navbar a {
