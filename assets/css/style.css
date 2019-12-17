@@ -14,18 +14,20 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .07em;
 }
 
 section {
-    padding: 60px 10px;
+    padding: 30px 8px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a;
     font-family: 'Lexend Deca', sans-serif ;
+    margin-top: 30px;
 }
+
 
 a {
     color: #6d9eeb;
@@ -57,7 +59,7 @@ dl, ol, ul {
     z-index: 10;
     width: 100%;
     border-bottom: 1px solid #ced4da;
-    box-shadow: 0 0 0px #ced4da;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar a {
@@ -153,6 +155,7 @@ dl, ol, ul {
 
 .nav-btn {
     color: #666666 !important;
+    cursor: pointer;
     line-height: 35px;
     padding-left: 10px;
     padding-right: 10px;
@@ -192,6 +195,27 @@ dl, ol, ul {
 }
 
 /*////////////////// 文本图框 //////////////////*/
+.comment {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: .75rem;
+  padding: .25rem 1rem .25rem 1rem;
+}
+
+.eyecus-table-info {
+  color: #868e96;
+  margin-top: -10px;
+  font-size: 13px;
+  padding-left: 13px;
+  padding-bottom: 20px;
+
+
+}
+
+.eyecus-table-info  a {
+    color: #868e96;
+}
+
 
 .fillet-box {
     background: #ffffff;
@@ -202,7 +226,12 @@ dl, ol, ul {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0px 0px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.fillet-box:hover {
+    box-shadow: 3px 10px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .fillet-box h4 {
@@ -230,18 +259,35 @@ dl, ol, ul {
 /*////////////////// 页脚 //////////////////*/
 
 #footer, #footer a {
-    color: #1a1a1a;
+    color: #666;
     font-size: 13px;
 }
 
-.logo-footer {
-    max-width: 400px;
+.eyecus-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 20px 20px;
 }
 
-.footer-link > i {
-    font-size: 24px;
-    padding: 0 5px;
+.eyecus-footer li {
+    display:inline-block;
+    margin: 3px 20px 0 0;
 }
+
+.eyecus-footer-logo {
+    padding-bottom: 10px;
+}
+
+.eyecus-footer-qr {
+    margin-top: 10px;
+}
+
+.eyecus-copyright {
+    font-size: 10px;
+    padding: 10px 35px 0 0;
+}
+
+
 
 /*////////////////// 其它 //////////////////*/
 
